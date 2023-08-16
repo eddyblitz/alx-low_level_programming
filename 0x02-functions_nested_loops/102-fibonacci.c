@@ -8,7 +8,7 @@
 int main(void)
 {
 int n;
-long long int fibo1 = 1, fibo2 = 2, next;
+unsigned long long int fibo1 = 1, fibo2 = 2, next;
 
 printf("%llu, %llu", fibo1, fibo2);
 
