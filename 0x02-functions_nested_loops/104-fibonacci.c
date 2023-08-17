@@ -19,14 +19,10 @@ for (count = 3; count <= 98; count++)
 fib3 = fib1 + fib2;
 printf(", %lu", fib3);
 
-if (fib3 / fib2 == 1)
-break;
-
 fib1 = fib2;
 fib2 = fib3;
 }
 
 printf("\n");
-
 return (0);
 }
