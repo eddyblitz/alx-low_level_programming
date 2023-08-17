@@ -7,21 +7,22 @@
  */
 int main(void)
 {
-int n;
-unsigned long int fibo1 = 1, fibo2 = 2, next;
+unsigned long int fib[50];
+int i;
 
-printf("%lu, " fibo1);
+fib[0] = 1;
+fib[1] = 2;
 
-for (n = 2; n < 50; n++)
+for (i = 2; i < 50; i++)
 {
-printf("%lu", fibo2);	
-next = fibo1 + fibo2;
-fibo1 = fibo2;
-fibo2 = next;
-if (n !=49)
-printf(",  ");	
+fib[i] = fib[i - 1] + fib[i - 2];
 }
 
-printf("\n");
+for (i = 0; i < 49; i++)
+{
+printf("%lu, ", fib[i]);
+}
+printf("%lu\n", fib[49]);
+
 return (0);
 }
