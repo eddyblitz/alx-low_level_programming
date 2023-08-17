@@ -18,6 +18,8 @@ next = fibo1 + fibo2;
 printf(", %llu", next);
 fibo1 = fibo2;
 fibo2 = next;
+if (n !=49)
+printf(",  ");	
 }
 
 printf("\n");
