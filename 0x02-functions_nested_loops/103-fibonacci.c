@@ -8,8 +8,7 @@
 int main(void)
 {
 unsigned long fib[3];
-unsigned long sum = 2;  // We start with 2 since the second term is even
-int i;
+unsigned long sum = 2;
 
 fib[0] = 1;
 fib[1] = 2;
